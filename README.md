@@ -21,6 +21,21 @@ or
 ./extract.sh DEVICE
 ```
 
+# Important modification 重要的改动
+
+初次安装系统请按照教程操作，进入系统后合并项目根目录的`EVRootCA.reg`以信任时间戳服务器。随后关闭`测试模式`和`禁用驱动强制签名`即可使用已签名的驱动。
+
+Please follow the tutorial to install the system for the first time. After entering the system, merge the `EVRootCA.reg` in the project root directory to trust the timestamp server. Then turn off `Testsigning` and `Disable driver signature enforcement` to use the signed driver.
+
+**该操作可能会使你遭受中间人攻击**
+
+**如果你不了解你在做什么，请使用Renegade Project原版驱动**
+
+**This operation may expose you to a man-in-the-middle attack**
+
+**If you don’t understand what you are doing, please use the original Renegade Project driver**
+
+
 ## Copyright, License, Disclaimers and end user license agreement
 
 **Below notice must be present in all redistributed portions of this software**
@@ -57,6 +72,8 @@ We would like to thank the following people that helped:
 - TAO_Croatia
 
 - wetdreams
+
+- xqymain
 
 - Our testers, you know who you are :)
 
